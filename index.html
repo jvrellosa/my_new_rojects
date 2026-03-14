@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My 7ANALYTICS Portfolio</title>
+    <style>
+        /* General body and background setup */
+        body {
+            background-color: black;
+            background-image: url('file:///C:/Users/COMLAB/Downloads/JVRELLOSA/7ANALYTICS/image/giphy.gif');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            text-shadow: 0 0 15px rgba(0, 51, 102, 0.7), 0 0 25px rgba(0, 51, 102, 0.7);
+        }
+
+        /* Header style */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 51, 102, 0.7);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 4em;
+            color: skyblue;
+            text-shadow: 0 0 15px rgba(135, 206, 250, 0.7), 0 0 30px rgba(135, 206, 250, 0.7);
+            margin: 0;
+            animation: glowHeader 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes glowHeader {
+            0% {
+                text-shadow: 0 0 15px rgba(135, 206, 250, 0.7), 0 0 30px rgba(135, 206, 250, 0.7);
+            }
+            100% {
+                text-shadow: 0 0 25px rgba(135, 206, 250, 1), 0 0 50px rgba(135, 206, 250, 0.7), 0 0 70px rgba(135, 206, 250, 0.7);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Navigation styling */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 51, 102, 0.7);
+        }
+
+        nav a {
+            color: rgba(135, 206, 250, 1);
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 12px 20px;
+            margin: 0 20px;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: rgba(0, 51, 102, 1);
+            color: white;
+            box-shadow: 0 0 20px rgba(135, 206, 250, 0.7);
+            text-shadow: 0 0 25px rgba(135, 206, 250, 1), 0 0 50px rgba(135, 206, 250, 0.7);
+        }
+
+        /* Section styling */
+        .content { padding: 40px; z-index: 1; }
+        .hero { text-align: center; padding: 80px 0; animation: slideIn 1s ease-in-out; }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-100px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        .hero img {
+            width: 300px;
+            border: 5px solid rgba(0, 51, 102, 1);
+            box-shadow: 0 0 20px rgba(0, 51, 102, 0.7);
+            transition: all 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .hero img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 51, 102, 0.7);
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            color: skyblue;
+            text-align: center;
+            text-shadow: 0 0 15px rgba(135, 206, 250, 0.7), 0 0 30px rgba(135, 206, 250, 0.7);
+            animation: glowHeader 1.5s ease-in-out infinite alternate;
+            margin-bottom: 20px;
+        }
+
+        .section p, .section ul { font-size: 1.1em; text-align: center; }
+
+        /* Box styling */
+        .box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(0, 51, 102, 0.7);
+            margin-bottom: 40px;
+            animation: glow 2s ease-in-out infinite alternate;
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        @keyframes glow { 0% { box-shadow:0 0 20px rgba(0,51,102,0.7);} 100%{ box-shadow:0 0 40px rgba(0,51,102,0.7); } }
+        .box:hover { transform: scale(1.05); }
+
+        .box a {
+            display: block;
+            color: white;
+            background-color: rgba(0, 51, 102, 1);
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 51, 102, 0.7);
+        }
+
+        .box a:hover {
+            background-color: rgba(135, 206, 250, 1);
+            color: rgba(0, 0, 0, 1);
+            box-shadow: 0 0 20px rgba(135, 206, 250, 0.7);
+            text-shadow: 0 0 25px rgba(135, 206, 250, 1), 0 0 50px rgba(135, 206, 250, 0.7);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: rgba(0, 51, 102, 1);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 51, 102, 0.7);
+        }
+
+        footer p {
+            font-size: 1.1em;
+            text-shadow: 0 0 8px rgba(0, 51, 102, 0.7), 0 0 15px rgba(0, 51, 102, 0.7);
+        }
+
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Flow G Page </h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#midterms">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Background music -->
+<audio autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+</audio>
+
+<div class="content">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="box">
+            <h2>Welcome to My Portfolio 📂</h2>
+            <p>This portfolio documents the step-by-step process and projects I have completed.</p>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">⬆️</button>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="box">
+            <h2>About Me 😇</h2>
+            <div class="about-content">
+                <img src="jvr.jpg" alt="John Vincent Rellosa">
+                <style>
+.about-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;          /* makes it circle */
+    margin: 0 auto 20px auto;    /* centers and adds space below */
+    display: block;              /* centers horizontally */
+    border: 4px solid skyblue;   /* border color */
+    box-shadow: 0 0 20px skyblue, 0 0 40px skyblue; /* glowing effect */
+}
+</style>
+                <p>Hi, I am John Vincent Rellosa, a student passionate about exploring ideas and creating projects. I enjoy learning new technologies and applying them in meaningful ways. I aspire to thrive in the IT industry and make a positive impact.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="box">
+            <h2>🎓 Education</h2>
+            <p>College: Currently Studying at City College of Angeles</p>
+            <p>High School: Graduated From Pasay City South High School</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="midterms">
+        <div class="box">
+            <h2>📝 My Projects</h2>
+            <a href="https://docs.google.com/spreadsheets/d/1HXYaOvsvgfeTCx7mPnWSzUf3dYNEk_84/edit?gid=1055012773#gid=1055012773" target="_blank">Task 1 Demo File for Data Preparation and Cleaning</a>
+            <a href="https://docs.google.com/spreadsheets/d/1UO6Mm0SkCToyAsN8dlA9vDl2T7x3fUNs/edit?gid=1393018597#gid=1393018597" target="_blank">Midterm Task 2. Pivot Tables and Charts in Excel</a>
+            <a href="https://docs.google.com/spreadsheets/d/1_HjDxipAIDTJMVK7dIPRw1z_YS_oPGTg/edit?gid=559692219#gid=559692219" target="_blank">Task 2 MS Excel Functions</a>
+            <a href="https://docs.google.com/spreadsheets/d/1G_Q687EYJR7_fmaLGxZHhH6C98UYDHGD/edit?gid=1183129017#gid=1183129017" target="_blank">Task 3 Demo Creating Dashboards in Excel</a>
+            <a href="https://docs.google.com/spreadsheets/d/1X01dCd-zgxIi62VU6uuCLGZ83mSCEBI0/edit?gid=1664872367#gid=1664872367" target="_blank">Midterm Task 3 Normalization using Power Query</a>
+        </div>
+        <div class="box">
+            <h2>📸 My Screenshots</h2>
+            <div class="box">
+    <img src="ssdash.png" alt="Task 1 Screenshot" class="screenshot">
+    <img src="ssdc.png" alt="Task 2 Screenshot" class="screenshot">
+    <img src="sspivot.png" alt="Task 3 Screenshot" class="screenshot">
+    <img src="sstask3.png" alt="Task 4 Screenshot" class="screenshot">
+
+
+</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="box">
+            <h2>📧 Contact Me</h2>
+            <p>If you want to get in touch, feel free to reach out at  
+            <a href="mailto:jvrellosa@cca.edu.ph">jvrellosa@cca.edu.ph</a></p>
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 John Vincent Rellosa. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript for Scroll Button -->
+<script>
+    let mybutton = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function() {
+        mybutton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+    };
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</body>
+</html>
